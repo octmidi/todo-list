@@ -13,7 +13,9 @@ function App() {
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
-  };
+
+
+  }
 
   const handleAddItem = () => {
     if (inputText.trim() !== '') {
@@ -23,9 +25,16 @@ function App() {
   };
 
   const handleKeyPress = (e) => {
+    const regex = /^(?=.*[a-zA-Z]{4})[\w\d]*$/;
+
     if (e.key === 'Enter') {
-      handleAddItem();
+      if (regex.test(inputText)) {
+        handleAddItem();
+      } else {
+        alert('La cadena no cumple con los requisitos mínimos.');
+      }
     }
+
   };
 
   const handleRemoveItem = (index) => {
@@ -33,6 +42,8 @@ function App() {
     updatedList.splice(index, 1);
     setListItems(updatedList);
   }
+
+
 
   return (
     <div className='list'>
