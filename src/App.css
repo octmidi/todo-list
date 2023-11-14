@@ -2,6 +2,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+.div-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(165, 80, 80);
+
 }
 
 input {
