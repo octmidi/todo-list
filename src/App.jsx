@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <div className='div-back'><h1>Todos</h1></div>
-      <div className='list'>
+      <div className='list stacked'>
 
         <ListGroup className='group'>
 

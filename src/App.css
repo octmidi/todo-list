@@ -13,9 +13,33 @@ body {
 
 }
 
+.stacked {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  height: 250px;
+  margin: 50px auto;
+  width: 300px;
+  box-shadow: 0 0 0 hsla(0, 0%, 0%, .5),
+    0 3px 0 -2px #f6f6f6,
+    0 3px 2px -2px hsla(0, 0%, 0%, .4),
+    0 7px 0 -4px #f6f6f6,
+    0 7px 2px -4px hsla(0, 0%, 0%, .4),
+    0 11px 0 -6px #f6f6f6,
+    0 11px 2px -6px hsla(0, 0%, 0%, .4),
+    0 15px 0 -8px #f6f6f6,
+    0 15px 2px -8px hsla(0, 0%, 0%, .4),
+    0 19px 0 -10px #f6f6f6,
+    0 19px 2px -10px hsla(0, 0%, 0%, .4),
+    0 23px 0 -12px #f6f6f6,
+    0 23px 2px -12px hsla(0, 0%, 0%, .4);
+}
+
 input {
 
   background-color: rgba(235, 235, 235, 0.856);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
