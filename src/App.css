@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+
+  background-color: rgba(235, 235, 235, 0.856);
+
+}
+
+.group {
+  width: 300px;
+}
+
+.list {
+  display: flex;
+
+}
+
+.left-aligned-item {
+  display: flex;
+  text-align: left;
+}
+
+.icon {
+  flex-direction: row;
+  float: right;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
