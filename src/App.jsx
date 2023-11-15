@@ -10,6 +10,7 @@ function App() {
 
   const [inputText, setInputText] = useState('');
   const [listItems, setListItems] = useState([]);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleInputChange = (e) => {
     const capitalizedText = e.target.value
@@ -62,15 +63,23 @@ function App() {
               onChange={handleInputChange}
               onKeyDown={handleKeyPress}
               placeholder="Ingrese un elemento y presione Enter"
+
             />
 
           </InputGroup>
           {listItems.map((item, index) => (
-            <ListGroup.Item key={index} className='left-aligned-item'>{item}
-              <Badge bg="Light" pill className='icon' onClick={() => handleRemoveItem(index)}>
-                '❌'
-              </Badge>
+            <ListGroup.Item key={index}
+              className='left-aligned-item'
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              {item}
+              {hoveredIndex === index && (
 
+                <Badge bg="Light" pill className='icon' onClick={() => handleRemoveItem(index)}>
+                  '❌'
+                </Badge>
+              )}
             </ListGroup.Item>
 
 
