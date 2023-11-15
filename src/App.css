@@ -11,6 +11,7 @@ body {
   justify-content: center;
   color: rgb(165, 80, 80);
 
+
 }
 
 .stacked {
@@ -34,21 +35,23 @@ body {
     0 23px 2px -12px hsla(0, 0%, 0%, .4);
 }
 
-input {
-
-  background-color: rgba(235, 235, 235, 0.856);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.form {
+  border-radius: 0%;
+ 
 
 }
 
 .group {
   width: 300px;
+  border-top: none;
+
+
 }
 
 .list {
   display: flex;
+
+
 
 }
 
@@ -65,4 +68,9 @@ input {
 .icon:hover {
   transform: scale(1.5);
   cursor: pointer;
+}
+
+.total {
+  font-size: 11px;
+  font: color rgb(197, 197, 199);
 }

@@ -17,9 +17,6 @@ function App() {
       .replace(/\b\w/g, (char) => char.toLocaleUpperCase());  // Convierte la primera letra de cada palabra en mayúscula
 
     setInputText(capitalizedText);
-
-
-
   }
 
   const handleAddItem = () => {
@@ -76,7 +73,9 @@ function App() {
 
             </ListGroup.Item>
 
+
           ))}
+          <ListGroup.Item className='total'>{listItems.length} item left</ListGroup.Item>
         </ListGroup>
       </div>
     </>
